@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 export const Content = styled.div`
   display: flex;
   align-items: center;
+  // FIXME: For some reason this doesn't work.
   justify-content: space-between;
   max-width: var(--maxWidth);
   padding: 20px 0;
