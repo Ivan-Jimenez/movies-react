@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-// FIXME: All this looks like shit.
 export const Wrapper = styled.div`
   background: linear-gradient(
     to bottom, rgba(0, 0, 0, 0)
