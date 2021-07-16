@@ -6,6 +6,7 @@ import { IMAGE_BASE_URL, POSTER_SIZE } from '../config';
 import BreadCrum from './BreadCrum';
 import Grid from './Grid';
 import Spinner from './Spinner';
+import MovieInfo from './MovieInfo';
 
 import { useMovieFetch } from '../hooks/useMovieFetch';
 
@@ -21,6 +22,7 @@ const Movie = () => {
   return (
     <>
       <BreadCrum movieTitle={ movie.original_title } />
+      <MovieInfo movie={ movie } />
     </>
   );
 };
