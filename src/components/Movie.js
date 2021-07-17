@@ -7,6 +7,7 @@ import BreadCrum from './BreadCrum';
 import Grid from './Grid';
 import Spinner from './Spinner';
 import MovieInfo from './MovieInfo';
+import MovieInfoBar from './MovieInfoBar';
 
 import { useMovieFetch } from '../hooks/useMovieFetch';
 
@@ -23,6 +24,11 @@ const Movie = () => {
     <>
       <BreadCrum movieTitle={ movie.original_title } />
       <MovieInfo movie={ movie } />
+      <MovieInfoBar 
+        time={ movie.time } 
+        budget={ movie.budget } 
+        revenue={ movie.revenue } 
+      />
     </>
   );
 };
