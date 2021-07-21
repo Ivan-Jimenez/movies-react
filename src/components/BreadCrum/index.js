@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { PropTypes } from 'prop-types';
 
 import { Wrapper, Content } from '../BreadCrum/BreadCrum.styles';
 
@@ -14,5 +15,9 @@ const BreadCrum = ({ movieTitle }) => (
     </Content>
   </Wrapper>
 );
+
+BreadCrum.propTypes = {
+  movieTitle: PropTypes.string
+}
 
 export default BreadCrum;
